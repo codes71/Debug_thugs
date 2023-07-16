@@ -12,10 +12,19 @@
       integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
       crossorigin="anonymous"
     />
+	<style>
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+	</style>
   </head><body>
 
 	<div class="container-fluid">
-		<div class="containerxs">
+		<div class="containers">
 			<nav class="navbar navbar-expand-lg navbar-light bg-light justify-content-between	">
 				<div class= "col-2 navbar-brand py-3 text-center text-primary">
 					<i class="bi bi-person-circle bi"></i>
@@ -50,75 +59,28 @@
 				</div>
 			  </nav>
 		</div>
-		
+		<!-- The main  -->
 		<div class="row">
-			<div class="d-flex col-5 bg-light pr-3">
-				<div class="">
-						<img src="https://th.bing.com/th/id/OIP.nRt539ti8ILl_PfSS7oaygHaHQ?pid=ImgDet&rs=1" 
-						class="justify-content-center rounded w-50 align-center">
-					<div class="align-center">
-						<input type="email" class="form-control" id="floatingInputDisabled" placeholder="name@example.com" disabled>
+			<div class="col-5 bg-danger pr-3">
+				<div class="justify-content-center">
+					<img src="https://th.bing.com/th/id/OIP.nRt539ti8ILl_PfSS7oaygHaHQ?pid=ImgDet&rs=1" class="w-75 center">
+					<div class="align-center pt-3">
+						<input type="text" class="form-control" id="floatingInputDisabled" placeholder="John Doe">
 						<label for="floatingInputDisabled">Email address</label>
 					  </div>
 					  <div class="form-floating mb-3">
-						<textarea class="form-control" placeholder="Leave a comment here" id="floatingTextareaDisabled" disabled></textarea>
+						<textarea class="form-control" placeholder="Leave a comment here" id="floatingTextareaDisabled" ></textarea>
 						<label for="floatingTextareaDisabled">Comments</label>
 					  </div>
-					  <div class="form-floating mb-3">
-						<textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2Disabled" style="height: 100px" disabled></textarea>
+					  <div class=" form-floating mb-3">
+						<textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2Disabled" style="height: 100px" ></textarea>
 						<label for="floatingTextarea2Disabled">Comments</label>
 					  </div>
-					  <div class="form-floating">
-						<select class="form-select" id="floatingSelectDisabled" aria-label="Floating label disabled select example" disabled>
-						  <option selected>Open this select menu</option>
-						  <option value="1">One</option>
-						  <option value="2">Two</option>
-						  <option value="3">Three</option>
-						</select>
-						<label for="floatingSelectDisabled">Works with selects</label>
 					  </div>
-				</div>
 			</div>
-			<!-- <nav class="col-2 bg-light pr-3">
-				
-				<div class="list-group text-center text-lg-left">
-					<span class="list-group-item disabled d-none d-lg-block">
-						<small>CONTROLS</small>
-					</span>
-					<a href="#" class="list-group-item list-group-item-action active">
-						<i class="fas fa-home"></i>
-						<span class="d-none d-lg-inline">Dashboard</span>
-					</a>
-					<a href="#" class="list-group-item list-group-item-action">
-						<i class="fas fa-flag"></i>
-						<span class="d-none d-lg-inline">Reports</span>
-					</a>
-				</div>
 
-				<div class="list-group mt-4 text-center text-lg-left">
-					<span class="list-group-item disabled d-none d-lg-block">
-						<small>ACTIONS</small>
-					</span>
-
-					<a href="#" class="list-group-item list-group-item-action">
-						<i class="fas fa-user"></i>
-						<span class="d-none d-lg-inline">New User</span>
-					</a>
-
-					<a href="#" class="list-group-item list-group-item-action">
-						<i class="fas fa-edit"></i>
-						<span class="d-none d-lg-inline">Update Data</span>
-					</a>
-
-					<a href="#" class="list-group-item list-group-item-action">
-						<i class="far fa-calendar-alt"></i>
-						<span class="d-none d-lg-inline">Add Events</span>
-					</a>
-				</div>
-			</nav> -->
-
-			<main class="col-7" style="background-color: rgb(108, 108, 200);;">
-				<div class="container p-4">
+			<div class="col-7" style="background-color: rgb(108, 108, 200);">
+				<div class="p-2">
 					<div class="row">
 						<h2 class="h6 text-white-50">Upcoming Appoinments</h2>
 						<div class="col-sm">
@@ -129,7 +91,6 @@
 									<button class="btn btn-primary btn-sm btn-block .icon-link link-hover" href="#">
 										Confirm
 									</button>
-									
 									<button class="btn btn-danger btn-sm btn-block .icon-link link-hover" href="#">
 										Cancel
 									</button>
@@ -253,7 +214,7 @@
 						</div>
 					</div>
 				</div>
-			</main> 
+			</div> 
 		</div>
 	</div>
 
